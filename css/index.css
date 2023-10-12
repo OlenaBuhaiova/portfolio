@@ -8,15 +8,15 @@
 
 :root {
     --text-color: rgb(240, 240, 240);
-    --accent-color: rgb(190, 49, 68);
-    --background-color: rgb(69, 86, 125);
-    --background-color-alternate: rgh(48, 56, 65);
+    --accent-color: rgb(49, 190, 61);
+    --background-color: ddrgb(227, 127, 65);
+    --background-color-alternate: rgb(48, 56, 65);
    font-family: 'Raleway', sans-serif;
    scroll-behavior: smooth;
 }
 
 .container {
-    min-width: 1600px;
+    min-width: 1500px;
     margin: auto;
 }
 
@@ -64,10 +64,10 @@
 
 .nav a:hover {
     background-color: var(--background-color);
-}
+    }
 
 .welcome-section {
-    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background: linear-gradient(62deg, #a9afb5 0%, #181719 100%);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@
     padding: 100px 20px;
 }
 
- h2 {
+h2 {
     font-size: 42px;
     color: var(--text-color);
     text-align: center;
@@ -108,7 +108,7 @@
 }
 
 .project-list .title-container {
-    padding: 5px 20px;
+    padding: 5px  20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,11 +119,60 @@
 .project-list article h3 {
     color: var(--text-color);
     font-size: 30px;
-   
 }
+
 
 @media (min-widht: 731px) {
     .project-list {
         grid-template-columns: 1fr 1fr 1fr;
     } 
 }
+
+
+@media (min-width: 1091px) {
+    .project-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1400px) {
+    .project-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.contact {
+    min-height: 80vh;
+    background-color: var(--background-color-alternate);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-socials a {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.icon {
+    display: block;
+    width: 40px;
+}
+
+.contact p {
+    font-size: 30px;
+    color: var(--background-color-alternate);
+    text-align: center;
+}
+
