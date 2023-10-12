@@ -9,7 +9,7 @@
 :root {
     --text-color: rgb(240, 240, 240);
     --accent-color: rgb(49, 190, 61);
-    --background-color: ddrgb(227, 127, 65);
+    --background-color: rgb(227, 127, 65);
     --background-color-alternate: rgb(48, 56, 65);
    font-family: 'Raleway', sans-serif;
    scroll-behavior: smooth;
@@ -148,13 +148,14 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+    }
 
 .contact-socials {
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    background: var(--background-color-alternate);
 }
 
 .contact-socials a {
@@ -172,7 +173,7 @@ h2 {
 
 .contact p {
     font-size: 30px;
-    color: var(--background-color-alternate);
+    color: var(--text-color);
     text-align: center;
 }
 
