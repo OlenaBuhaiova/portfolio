@@ -98,6 +98,7 @@ h2 {
     margin-bottom: 60px;
 }
 
+
 .project-list {
     display: grid;
     gap: 20px;
@@ -114,6 +115,9 @@ h2 {
     justify-content: center;
     background-color: var(--background-color-alternate);
     min-height: 80px;
+    border-radius: 5px;
+    border: 2px solid var(--text-color);
+
 }
 
 .project-list article h3 {
@@ -155,8 +159,7 @@ h2 {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    background: var(--background-color-alternate);
-}
+   }
 
 .contact-socials a {
     display: flex;
